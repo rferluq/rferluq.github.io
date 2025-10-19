@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(49, 0, 128);
+    color: white;
+}
+
+header{
+    background-color: blue;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

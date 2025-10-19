@@ -1,0 +1,83 @@
+body {
+    background-color: #a10000; 
+    color: white; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+header {
+    background-color: #C44536; 
+    color: #F8F5F0; 
+    padding: 10px 0;    
+    font-weight: bold;
+    border-bottom: 3px solid #DDC3A5; 
+}
+
+#MENU {
+            background-color: #C44536;
+            height: 80px;
+            padding-top: 35px;
+        }
+
+hr {
+    border: none;
+    border-top: 1px solid #DDC3A5;
+    margin: 30px auto;
+    width: 80%;
+}
+
+#botonatras {
+    font-size: 0.8em;
+    margin-right: 3000px;
+    background-color: rgb(83, 83, 83);
+    color:white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#botonreceta {
+     font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color:white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+h2 {
+    font-size: 1.6em;
+    color: white;
+    margin: 15px ;
+}
+
+#recetas {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#recetas:hover {
+    transform: scale(1.05);
+}
+#portadarestaurante{
+    width: 60%;
+    margin-top: 30px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer {
+   background-color: #C44536; 
+    color: #F8F5F0; 
+    padding: 10px 0;    
+    font-weight: bold;
+    border-top: 3px solid #DDC3A5; 
+}
