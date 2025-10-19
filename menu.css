@@ -1,12 +1,28 @@
 body{
     background-color: rgb(49, 0, 128);
     color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;  
 }
 
 header{
     background-color: blue;
     color: white;
+    text-align: center;
+    height: 150px;
+    margin: 0px;
+    padding: 0px 0;    
+    font-weight: bold;
+    border-bottom: 3px solid #DDC3A5; 
 }
+
+#principal{
+    padding: 50px;
+}
+
+
 h1{
     color: white;
 }
@@ -16,4 +32,16 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+ol {
+    text-align: justify;
+    margin: 30px;
+    margin-inline-end: 100px;
+    margin-inline-start: 100px;
+    tab-size: 30px;
+}
+
+ol li::marker{
+    font-size: 40px;    /* Aprendí por internet que se puede marcar todos los "li" de "ol" con el "marker" */
 }
