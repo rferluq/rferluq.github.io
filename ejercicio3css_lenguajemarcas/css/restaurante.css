@@ -29,6 +29,19 @@ hr {
     width: 80%;
 }
 
+#botonatras {
+    font-size: 0.8em;
+    margin-right: 3000px;
+    background-color: rgb(83, 83, 83);
+    color:white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#botonreceta {
+     font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color:white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
 
 h2 {
@@ -68,4 +81,7 @@ footer {
     font-weight: bold;
     border-top: 3px solid #DDC3A5; 
 }
+    border-top: 3px solid #DDC3A5; 
+}
+
 
