@@ -20,6 +20,7 @@ header{
 
 #principal{
     padding: 50px;
+    font-size: 45px;
 }
 
 
@@ -45,4 +46,5 @@ ol {
 ol li::marker{
     font-size: 40px;    /* Aprendí por internet que se puede marcar todos los "li" de "ol" con "marker" */
 }
+
 
