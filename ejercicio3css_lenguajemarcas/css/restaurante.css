@@ -11,7 +11,7 @@ body {
 header {
     background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 10px 0;    
+    padding: 0px 0;    
     font-weight: bold;
     border-bottom: 3px solid #DDC3A5; 
 }
@@ -81,7 +81,3 @@ footer {
     font-weight: bold;
     border-top: 3px solid #DDC3A5; 
 }
-    border-top: 3px solid #DDC3A5; 
-}
-
-
