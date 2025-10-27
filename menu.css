@@ -13,7 +13,7 @@ header{
     text-align: center;
     height: 150px;
     margin: 0px;
-    padding: 0px 0;    
+    padding: 10px 0;    
     font-weight: bold;
     border-bottom: 3px solid #DDC3A5; 
 }
@@ -45,3 +45,4 @@ ol {
 ol li::marker{
     font-size: 40px;    /* Aprendí por internet que se puede marcar todos los "li" de "ol" con "marker" */
 }
+
