@@ -1,4 +1,12 @@
 body{
     background-color: rgb(49, 0, 128);
     color: white;
+    
+}
+
+td{
+    text-align: center;
+}
+th{
+    text-align: center;
 }
