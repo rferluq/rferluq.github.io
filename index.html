@@ -3,20 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
-    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <title>Horario 1º DAW</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="horario.css"/>
 </head>
 <body>
-    <header>
-        <a href="https://github.com/rferluq" title="Enlace a mi página de GitHub"><h1 id="principal">Mis proyectos</h1></a>
-        <!-- Busqué como hacer para que salga un texto al pasar el mouse, con "title"-->
-    </header>
-    <ol>
-        <li><a href="./ejercicio2_lenguajemarcas/index.html"><h1>Proyecto periódico</h1></a></li>
-        <li><a href="./ejercicio3css_lenguajemarcas/index.html"><h1>Proyecto Restaurante CSS</h1></a></li>
-         <li><a href="./horario_1DAW/index.html"><h1>Horario</h1></a></li>
-    </ol>
+    <h1>Horario 1º DAW</h1><a href="../index.html"><button id="botonatras">Volver atrás</button></a> 
+    <br>
+    <table class="table table-bordered" style="width: 60%;">
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>16:00h-17:00h</td>
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Lunes-->
+        <td class="table-dark">ENDES<br>(José A. Muñoz)</td> <!-- Martes-->
+        <td class="table-success">BADAT<br>(Ernesto Escobar)</td> <!-- Miércoles-->
+        <td class="table-success">BADAT<br>(Marta Mejías)</td> <!-- Jueves-->
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Viernes-->
+      </tr>      
+      <tr>
+        <td>17:00h-18:00h</td>
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Lunes-->
+        <td class="table-dark">ENDES<br>(José A. Muñoz)</td> <!-- Martes-->
+        <td class="table-success">BADAT<br>(Ernesto Escobar)</td> <!-- Miércoles-->
+        <td class="table-success">BADAT<br>(Marta Mejías)</td> <!-- Jueves-->
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Viernes-->
+      </tr>
+      <tr>
+        <td>18:00h-19:00h</td>
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Lunes-->
+        <td class="table-dark">ENDES<br>(José A. Muñoz)</td> <!-- Martes-->
+        <td class="table-success">BADAT<br>(Marta Mejías)</td> <!-- Miércoles-->
+        <td class="table-active">DASPGS<br>(Marta Mejías)</td> <!-- Jueves-->
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Viernes-->
+      </tr>
+      <tr>
+        <td>19:00h-19:55h</td>
+        <td class="table-warning">SINF<br>(Ernesto Escobar)</td> <!-- Lunes-->
+        <td class="table-primary">LMSGI<br>(Ernesto Escobar)</td> <!-- Martes-->
+        <td class="table-success">BADAT<br>(Marta Mejías)</td> <!-- Miércoles-->
+        <td class="table-active">SASP<br>(Marta Mejías)</td> <!-- Jueves-->
+        <td class="table-warning">SINF<br>(Ernesto Escobar)</td> <!-- Viernes-->
+      </tr>
+      <tr >
+        <td>19:55h-20:10h</td>
+        <td colspan="6" style="background-color: #eb75e5" ><b>DESCANSO</b></td>
+        
+      </tr>
+      <tr>
+        <td>20:10h-21:05h</td>
+        <td class="table-warning">SINF<br>(Ernesto Escobar)</td> <!-- Lunes-->
+        <td class="table-primary">LMSGI<br>(Ernesto Escobar)</td> <!-- Martes-->
+        <td class="table-light">IPE I<br>(Lola Espejo)</td> <!-- Miércoles-->
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Jueves-->
+        <td class="table-warning">SINF<br>(Ernesto Escobar)</td> <!-- Viernes-->
+      </tr>
+      
+      <tr>
+        <td>21:05h-22:00h</td>
+        <td class="table-primary">LMSGI<br>(Ernesto Escobar)</td> <!-- Lunes-->
+        <td class="table-light">IPE I<br>(Lola Espejo)</td> <!-- Martes-->
+        <td class="table-light">IPE I<br>(Lola Espejo)</td> <!-- Miércoles-->
+        <td class="table-danger">PROG<br>(José A. Jiménez)</td> <!-- Jueves-->
+        <td class="table-warning">SINF<br>(Ernesto Escobar)</td> <!-- Viernes-->
+      </tr>
+    </tbody>
+  </table>
+  <ul>
+    <li><b>LMSGI:</b> Lenguajes de marcas y sistemas de gestión de información (0373)</li>
+    <li><b>SINF:</b> Sistemas informáticos (0483)</li>
+    <li><b>BADAT:</b> Bases de datos (0484)</li>
+    <li><b>PROG:</b> Programación (0485)</li>
+    <li><b>ENDES:</b> Entornos de desarrollo (0487)</li>
+    <li><b>DASPGS:</b> Digitalización aplicada al sistema productivo GS (1665)</li>
+    <li><b>SASP:</b> Sostenibilidad aplicada al sistema productivo (1708)</li>
+    <li><b>IPE I:</b> Itinerario personal para la empleabilidad I (1709)</li>
+  </ul>
 </body>
-
 </html>
-
