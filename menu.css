@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(49, 0, 128);
+    background-color: rgba(53, 0, 138, 0.671);
     color: white;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body{
 }
 
 header{
-    background-color: blue;
+    background-color: rgb(68, 1, 77);
     color: white;
     text-align: center;
     height: 150px;
@@ -43,5 +43,5 @@ ol {
 }
 
 ol li::marker{
-    font-size: 40px;    /* Aprendí por internet que se puede marcar todos los "li" de "ol" con el "marker" */
+    font-size: 40px;    /* Aprendí por internet que se puede marcar todos los "li" de "ol" con "marker" */
 }
