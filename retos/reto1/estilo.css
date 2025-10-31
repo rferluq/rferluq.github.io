@@ -8,6 +8,11 @@
     background-color: hsl(30, 54%, 90%);
     color: hsl(30, 10%, 34%);
  }
+ @font-face{
+  font-family: 'Young Serif';
+  src: url('./recursos/fonts/young-serif/YoungSerif-Regular.ttf') format('YoungSerif-Regular');
+  font-weight: 400;
+ }
 
  #receta{
     background-color: hsl(0, 0%, 100%);
