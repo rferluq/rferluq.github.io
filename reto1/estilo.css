@@ -1,0 +1,136 @@
+ body{
+   width: 50%;
+   align-items: center;
+    padding-top: 100px;
+    padding-left: 25%;
+    padding-right: 20%;
+    padding-bottom: 100px;
+    background-color: hsl(30, 54%, 90%);
+ }
+
+ #receta{
+    background-color: white;
+    border-radius: 2px;
+    text-align: center;
+    border-radius: 20px;
+    align-self: center;
+ }
+
+ #omelette{
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 90%;
+    will-change: auto;
+ }
+ 
+ h1{
+    text-align: left;
+    margin-left: 20px;
+
+ }
+ 
+ .def{
+   font-size: 16px;
+   text-align: left;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+ #t_preparation{
+    color: hsl(332, 51%, 32%);
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 20px;
+ }
+
+ #preparation{
+    background-color: hsl(330, 100%, 98%);
+   text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+ }
+
+#preparation_list li::marker{
+   color: hsl(332, 51%, 32%);
+}
+
+#preparation_list li{
+   padding-left: 20px;
+}
+
+ ul{
+   line-height: 30px;
+   text-align: left;
+ }
+
+ .titles{
+   color: hsl(14, 45%, 36%);
+   text-align: left;
+    margin-left: 20px;
+ }
+
+ ul li{
+   padding-left: 15px;
+ }
+ ul li::marker{
+   color: hsl(14, 45%, 36%);
+ }
+ hr{
+   margin: 20px;
+   background-color: hsl(30, 18%, 87%);
+   border:none;
+   height: 1px;
+ }
+ 
+ ol{
+   line-height: 30px;
+   text-align: left;
+ }
+ 
+  ol li{
+   padding-left: 15px;
+  }
+
+ ol li::marker{
+   color: hsl(14, 45%, 36%);
+   font-weight: bold;
+ }
+
+ table{
+   width: 80%;
+   margin-left: 30px;
+   margin-right: 30px;
+   text-align: left;
+   border-collapse: collapse;
+ }
+
+ table td{
+   padding-right: 70px;
+   padding-bottom: 15px;
+   padding-top: 15px;
+   border-bottom-color: hsl(30, 18%, 87%);
+   border-bottom: 1px;
+   border-width: 1px;
+
+ }
+
+ table tr{
+   border-style: solid;
+   border-left-color: white;
+   border-right-color: white;
+   border-bottom: 1px;
+   border-width: 1px;
+ }
+
+ .brownitem{
+   color: hsl(14, 45%, 36%);
+   font-weight: bold;
+ }
+
+ .toptable{
+   border-top-color: white;
+ }
