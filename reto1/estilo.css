@@ -6,6 +6,7 @@
     padding-right: 20%;
     padding-bottom: 100px;
     background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
  }
 
  #receta{
@@ -60,6 +61,11 @@
 
 #preparation_list li{
    padding-left: 20px;
+}
+
+.preparation_element{
+  font-weight: bold;
+  
 }
 
  ul{
