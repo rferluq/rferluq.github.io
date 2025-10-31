@@ -10,7 +10,7 @@
  }
 
  #receta{
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     border-radius: 2px;
     text-align: center;
     border-radius: 20px;
@@ -29,6 +29,7 @@
  h1{
     text-align: left;
     margin-left: 20px;
+    color: hsl(24, 5%, 18%)
 
  }
  
@@ -65,7 +66,6 @@
 
 .preparation_element{
   font-weight: bold;
-  
 }
 
  ul{
