@@ -1,3 +1,8 @@
+@font-face{
+ font-family: SpookyTheme;
+ src: url('./recursos/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+ font-weight: 400;
+}
  body{
    width: 50%;
    align-items: center;
@@ -7,11 +12,7 @@
     padding-bottom: 100px;
     background-color: hsl(30, 54%, 90%);
     color: hsl(30, 10%, 34%);
- }
- @font-face{
-  font-family: 'Young Serif';
-  src: url('./recursos/fonts/young-serif/YoungSerif-Regular.ttf') format('YoungSerif-Regular');
-  font-weight: 400;
+    font-family: SpookyTheme;
  }
 
  #receta{
@@ -34,7 +35,8 @@
  h1{
     text-align: left;
     margin-left: 20px;
-    color: hsl(24, 5%, 18%)
+    color: hsl(24, 5%, 18%);
+    font-family: SpookyTheme;
 
  }
  
@@ -145,3 +147,4 @@
  .toptable{
    border-top-color: white;
  }
+

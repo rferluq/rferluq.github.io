@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El mejor restaurante de jamón de España.">
+    <meta name="keywords" content="restaurante, jamón, España, Montilla">
+    <meta name="author" content="rferluq">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./css/restaurante.css"/>
     <title>Restaurante Jamones</title>
     
@@ -10,29 +15,60 @@
 <body>
     <header>
     <a href="../index.html"><button id="botonatras">Volver atrás</button></a> 
-    <!-- Creo que no hemos dado los botones, pero descubrí que existían y quise ponerlos -->
     <a href="index.html"><h1><b>RESTAURANTE JAMONES</b></h1></a>
     </header>
 
     <a><img id="portadarestaurante" src="./images/local.png" /></a>
 
     <h1 id="MENU"><u>NUESTRA CARTA</u></h1>
-
+ <!-- Carrusel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+ 
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+      <a href="receta1.html"><img src="./images/croquetas.png" alt="Receta Croquetas" class="d-block w-100" style="width:100%"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="receta2.html" ><img src="./images/alcachofas.png" alt="Receta Alcachofas" class="d-block w-100" style="width:100%"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="receta3.html" ><img src="./images/huevos.png" alt="Receta Huevos" class="d-block w-100" style="width:100%"></a>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+ <!-- Fin Carrusel -->
+<div class="container-fluid mt-3">
+     <div class="row">
+    <div class="col-xl-4">
     <a href="receta1.html" ><h2><i>Croquetas de jamón</i></h2></a><br>
     <a href="receta1.html" ><img id="recetas" src="./images/croquetas.png"/></a><br>
     <a href="receta1.html"><button id="botonreceta">Receta Croquetas</button></a><br><br>
-
-
+    </div>
+    <div class="col-sm-4">
     <a href="receta2.html" ><h2><i>Revuelto de alcachofas con jamón</i></h2></a><br>
     <a href="receta2.html" ><img id="recetas" src="./images/alcachofas.png"  /></a>
     <br>
     <a href="receta2.html"><button id="botonreceta">Receta Alcachofas</button></a><br><br>
-
-
+    </div>
+    <div class="col-sm-4">
     <a href="receta3.html" ><h2><i>Huevos con jamón</i></h2></a><br>
     <a href="receta3.html" ><img id="recetas" src="./images/huevos.png"  /></a>
     <br>
     <a href="receta3.html"><button id="botonreceta">Receta Huevos con Jamón</button></a><br><br>
+    </div>
+</div>
+</div> 
 
     <footer>
         <h2><i><a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCggCEAAYgAQYogQyCggDEAAYgAQYogQyBwgEEAAY7wUyBwgFEAAY7wUyBggGEC4YQNIBCDM2NThqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=es&sa=X&geocode=KSVr9xidFG0NMTRyuCKinNyy&daddr=Av.+de+la+Constituci%C3%B3n,+14,+14550+Montilla,+C%C3%B3rdoba">
