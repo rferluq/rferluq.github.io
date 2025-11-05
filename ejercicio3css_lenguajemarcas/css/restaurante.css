@@ -11,15 +11,17 @@ body {
 header {
     background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 0px 0;    
+    padding: 0px 0px;
+    margin:0 250px;    
     font-weight: bold;
     border-bottom: 3px solid #DDC3A5; 
 }
 
 #MENU {
-            background-color: #C44536;
-            height: 80px;
-            padding-top: 35px;
+    background-color: #C44536;
+    height: 80px;
+    padding: 0px 0px;
+    margin:0 250px;
         }
 
 hr {
@@ -63,7 +65,7 @@ h2 {
 }
 #portadarestaurante{
     width: 60%;
-    margin-top: 30px;
+    padding: 30px;
 }
 a {
     text-decoration: none;
