@@ -38,29 +38,32 @@ hr {
     color:white;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#botonreceta {
+.botonreceta {
      font-size: 0.8em;
     background-color: rgb(83, 83, 83);
     color:white;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 10px;
 }
 
 
 h2 {
     font-size: 1.6em;
     color: white;
-    margin: 15px ;
+    margin: 10px ;
+    background-color: #C44536;
+    padding: 5px;
 }
 
 
-#recetas {
+.recetas {
     width: 250px;
     height: 250px;
     border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-#recetas:hover {
+.recetas:hover {
     transform: scale(1.05);
 }
 #portadarestaurante{

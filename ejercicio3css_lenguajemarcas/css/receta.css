@@ -11,7 +11,8 @@ body {
 header {
     background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 10px 0;    
+    padding: 0px 0px;
+    margin:0 250px;    
     font-weight: bold;
     border-bottom: 3px solid #DDC3A5; 
 }
@@ -33,21 +34,33 @@ hr {
 
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1em;
     color: white;
     text-align: center;
-    margin-left: 0%;
     background-color: #C44536;
+    padding: 0px 0px;
+    margin:10px 250px; 
 }
+
+.bloque1{
+    background-color: #C44536;
+    border-radius: 20px;
+    font-size: 0.6em;
+    color: white;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+}
+
 h4 {
     font-size: small;
-    color: white;
     text-decoration: underline;
 }
 
-#recetas {
+.recetas {
     width: 250px;
     height: 250px;
+    margin-top:15px;
     border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -66,6 +79,8 @@ a:hover{
     text-decoration: underline;
 }
 
+
+
 p {
     color: white;
     font-size: large;
@@ -74,6 +89,14 @@ p {
     margin-right: 150px;
 }
 
+.pdf{
+    background-color: white;
+    border-radius: 20px;
+    font-size: 0.4em;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
 
 ol {
     text-align: justify;
@@ -82,14 +105,18 @@ ol {
     margin-inline-start: 100px;
 }
 
-#ingredientes{
+
+.ingredientes{
         text-align: center;
     margin-left: 35%;
     text-align: left;
+    font-size: 0.6em;
 }
 
-#pasos {
-    margin-bottom: 30px
+.pasos {
+    margin-bottom: 30px;
+    font-size: 0.6em;
+    
 }
 
 footer {
