@@ -11,45 +11,47 @@ body {
 header {
     background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 0px 0px;
-    margin:0 250px;    
+    padding: 0% 0%;
+    margin: 0 10%;    
     font-weight: bold;
-    border-bottom: 3px solid #DDC3A5; 
+    border-bottom: 0.3% solid #DDC3A5; 
 }
 
 hr {
     border: none;
-    border-top: 1px solid #DDC3A5;
-    margin: 30px auto;
+    border-top: 0.1% solid #DDC3A5;
+    margin: 3% auto;
     width: 80%;
 }
 
 #botonatras {
-    font-size: 0.8em;
-    margin-right: 3000px;
-    background-color: rgb(83, 83, 83);
-    color:white;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+    position: absolute;
+    top: 10px;
+    left: 10px;
 
+    font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 h2 {
     font-size: 1em;
     color: white;
     text-align: center;
     background-color: #C44536;
-    padding: 0px 0px;
-    margin:10px 250px; 
+    padding: 0% 0%;
+    margin: 1% 10%; 
 }
 
-.bloque1{
+.bloque1 {
     background-color: #C44536;
     border-radius: 20px;
-    font-size: 0.6em;
+    font-size: 0.8em;       
     color: white;
-    width: 400px;
-    height: 250px;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;      
 }
 
 h4 {
@@ -58,9 +60,9 @@ h4 {
 }
 
 .recetas {
-    width: 250px;
-    height: 250px;
-    margin-top:15px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 3%;
     border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -68,61 +70,57 @@ h4 {
 #recetas:hover {
     transform: scale(1.05);
 }
-/* Un compañero de clase me explicó como hacer para que se ampliaran las imágenes al poner el ratón por encima */
 
 a {
     text-decoration: none;
     display: inline-block;
     color: white;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-
-
 
 p {
     color: white;
     font-size: large;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.pdf{
+.pdf {
     background-color: white;
     border-radius: 20px;
     font-size: 0.4em;
-    width: 100px;
-    height: 50px;
-    padding: 5px;
+    width: 20%;
+    height: auto;
+    padding: 2%;
 }
 
 ol {
     text-align: justify;
-    margin: 30px;
-    margin-inline-end: 100px;
-    margin-inline-start: 100px;
+    margin: 3%;
+    margin-inline-end: 10%;
+    margin-inline-start: 10%;
 }
 
-
-.ingredientes{
-        text-align: center;
+.ingredientes {
+    text-align: center;
     margin-left: 35%;
     text-align: left;
     font-size: 0.6em;
 }
 
 .pasos {
-    margin-bottom: 30px;
-    font-size: 0.6em;
-    
+    margin-bottom: 3%;
+    font-size: 0.6em; 
 }
 
 footer {
-   background-color: #C44536; 
+    background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 10px 0;    
+    padding: 1% 0;    
     font-weight: bold;
-    border-top: 3px solid #DDC3A5; 
+    border-top: 0.3% solid #DDC3A5; 
 }

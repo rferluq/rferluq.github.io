@@ -11,54 +11,57 @@ body {
 header {
     background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 0px 0px;
-    margin:0 250px;    
+    padding: 0% 0%;
+    margin: 0 10%;       
     font-weight: bold;
-    border-bottom: 3px solid #DDC3A5; 
+    border-bottom: 0.3% solid #DDC3A5; 
 }
 
 #MENU {
     background-color: #C44536;
-    height: 80px;
-    padding: 0px 0px;
-    margin:0 250px;
-        }
+    height: 10%;          
+    padding: 0% 0%;
+    margin: 0 10%;        
+}
 
 hr {
     border: none;
-    border-top: 1px solid #DDC3A5;
-    margin: 30px auto;
+    border-top: 0.1% solid #DDC3A5;
+    margin: 3% auto;
     width: 80%;
 }
 
 #botonatras {
+   position: absolute;
+    top: 1%;             
+    left: 1%;            
+
     font-size: 0.8em;
-    margin-right: 3000px;
     background-color: rgb(83, 83, 83);
-    color:white;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.botonreceta {
-     font-size: 0.8em;
-    background-color: rgb(83, 83, 83);
-    color:white;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin-top: 10px;
+    color: white;
+    padding: 1% 2%;      
+    border-radius: 5px;
 }
 
+.botonreceta {
+    font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color:white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 2%;     
+}
 
 h2 {
     font-size: 1.6em;
     color: white;
-    margin: 10px ;
+    margin: 2%;          
     background-color: #C44536;
-    padding: 5px;
+    padding: 1%;         
 }
 
-
 .recetas {
-    width: 250px;
-    height: 250px;
+    width: 40%;          
+    height: auto;        
     border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -66,24 +69,26 @@ h2 {
 .recetas:hover {
     transform: scale(1.05);
 }
-#portadarestaurante{
+
+#portadarestaurante {
     width: 60%;
-    padding: 30px;
+    padding: 3%;         
 }
+
 a {
     text-decoration: none;
     display: inline-block;
     color: white;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
 footer {
-   background-color: #C44536; 
+    background-color: #C44536; 
     color: #F8F5F0; 
-    padding: 10px 0;    
+    padding: 1% 0;       
     font-weight: bold;
-    border-top: 3px solid #DDC3A5; 
+    border-top: 0.3% solid #DDC3A5; 
 }
