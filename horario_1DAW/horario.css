@@ -18,10 +18,25 @@ th{
     vertical-align: middle;
 }
 
-table{
-    width: 70% !important;
+#botonatras {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 h1{
-    padding-left: 23%;
+    text-align: center;
+}
+
+.tabla{
+    display: block;             
+    margin: 2% auto; 
+    padding: 0px;
+    height: auto;  
+    width: 70%;
 }

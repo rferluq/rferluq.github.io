@@ -46,23 +46,38 @@ h2 {
 }
 
 .bloque1 {
+    display: flex;
+    flex-wrap: wrap;      /* permite que los bloques bajen */
+    gap: 10px;
+    justify-content: center;
+}
+
+.bloque2 {
     background-color: #C44536;
     border-radius: 20px;
-    font-size: 0.8em;       
+    font-size: 0.8em;
     color: white;
     padding: 10px;
-    width: 100%;      
+    width: 400px;
+max-width: 100%;
+        /* crecer y encoger, mínimo 150px */
+    min-width: 30%;     /* ❗ evita que se encojan más allá de 150px */      /* ❗ permite que bajen de línea en móviles */
+}
+
+p{
+    padding: 10%;
 }
 
 h4 {
-    font-size: small;
+    font-size: medium;
     text-decoration: underline;
 }
 
 .recetas {
+    display: block;
     max-width: 100%;
     height: auto;
-    margin-top: 3%;
+    margin: 3% auto;
     border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -81,21 +96,15 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
-    color: white;
-    font-size: large;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
 .pdf {
+    display: block;
     background-color: white;
     border-radius: 20px;
-    font-size: 0.4em;
-    width: 20%;
+    width: 30%;
     height: auto;
-    padding: 2%;
+    padding: 1%;
+    margin: 5% auto;
 }
 
 ol {
@@ -105,9 +114,12 @@ ol {
     margin-inline-start: 10%;
 }
 
+
 .ingredientes {
+    display: block;
     text-align: center;
-    margin-left: 35%;
+    width: 30%;
+    margin: 5% auto;
     text-align: left;
     font-size: 0.6em;
 }

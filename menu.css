@@ -31,20 +31,22 @@ a{
     text-decoration: none;
     color: none;
 }
-a:hover{
-    text-decoration: underline;
+
+.boton-a{
+    background-color: #482fd3;    
+    display: block;          
+    color: white;
+    width: 30%;    
+    margin: 5% auto; 
+    padding: 3%;
+    height: auto;  
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;  
+    cursor: pointer;
 }
 
-ol {
-    text-align: justify;
-    margin: 30px;
-    margin-inline-end: 100px;
-    margin-inline-start: 100px;
-    tab-size: 30px;
+
+.boton-a:hover {
+    background-color: #618afa;
 }
-
-ol li::marker{
-    font-size: 40px;    /* Aprendí por internet que se puede marcar todos los "li" de "ol" con "marker" */
-}
-
-
