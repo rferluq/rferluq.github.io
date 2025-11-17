@@ -47,7 +47,7 @@ h2 {
 
 .bloque1 {
     display: flex;
-    flex-wrap: wrap;      /* permite que los bloques bajen */
+    flex-wrap: wrap;     
     gap: 10px;
     justify-content: center;
 }
@@ -59,9 +59,9 @@ h2 {
     color: white;
     padding: 10px;
     width: 400px;
-max-width: 100%;
-        /* crecer y encoger, mínimo 150px */
-    min-width: 30%;     /* ❗ evita que se encojan más allá de 150px */      /* ❗ permite que bajen de línea en móviles */
+    max-width: 100%;
+    min-width: 30%;    
+    height: fit-content; 
 }
 
 p{

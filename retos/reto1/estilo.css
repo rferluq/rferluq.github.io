@@ -14,6 +14,18 @@
     color: hsl(30, 10%, 34%);
     font-family: SpookyTheme;
  }
+ 
+#botonatras {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
  #receta{
     background-color: hsl(0, 0%, 100%);
