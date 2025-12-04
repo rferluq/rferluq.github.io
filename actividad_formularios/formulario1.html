@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formularios para practicar">
+    <meta name="keywords" content="formulario, html, cs,">
+    <meta name="author" content="rferluq">
+    <title>Formularios</title>
+</head>
+<body>
+    <form name="formulario1" method="post" action="ejemploCliente.php">
+        <fieldset>
+        <legend>Datos personales</legend>
+        Nombre: <input type="text" name="nombre_cliente" value="">
+        Apellidos: <input type="text" name="apellidos_cliente" value="">
+        DNI: <input type="text" name="dni_cliente" value=""><br>
+        Localidad de Nacimiento: <input type="text" name="localidad_nac_cliente" value="">
+        Provincia: 
+        <select name="provincia[]">
+            <option value="huelva">Huelva</option>
+            <option value="cadiz">Cadiz</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="malaga">Malaga</option>
+            <option value="jaen">Jaen</option>
+            <option value="granada">Granada</option>
+            <option value="almeria">Almeria</option>
+        </select>
+        Fecha de Nacimiento: <input type="date" name="fec_nac_cliente" value=""><br>
+        Dirección: <input type="text" name="direccion_cliente" value="">
+        Código Postal: <input type="number" name="cp_cliente" value=""><br>
+        </fieldset>
+
+        <fieldset>
+         <legend>Forma de acceso</legend><br>
+        <input type="radio" name="directo" value="user" checked> Particular
+            <input type="radio" name="directo" value="business"> Empresa<br> 
+            <input type="radio" name="directo" value="business"> Empresa<br> 
+            <input type="radio" name="directo" value="business"> Empresa<br> 
+            <input type="radio" name="directo" value="business"> Empresa<br> 
+            <input type="radio" name="directo" value="business"> Empresa<br>    
+        <input type="radio" name="libre" value="business"> Empresa<br> 
+
+        </fieldset>
+
+        <fieldset>
+         <legend>Documentos Adjuntados</legend><br>
+        <input type="" name="acceso[]" value="" checked> Bizum
+        <input type="radio" name="acceso[]" value="tcredito"> Tarjeta de Crédito
+        <input type="radio" name="acceso[]" value="transferencia"> Transferencia
+        <input type="radio" name="acceso[]" value="pypal"> Pypal <br>
+        
+        <br><input type="submit" />       
+
+        </fieldset>
+        <br><input type="submit" />
+    </form>
+</body>
+</html>
