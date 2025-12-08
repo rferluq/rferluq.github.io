@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formularios para practicar">
+    <meta name="keywords" content="formulario, html, cs,">
+    <meta name="author" content="rferluq">
+    <link rel="stylesheet" type="text/css" href="./css/form2.css"/>
+    <title>Formulario 2</title>
+</head>
+<body>
+<div>
+  <h1>Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</h1>
+
+  <div class="box">
+    <h3 style="text-align:right; margin-top:0;">Datos personales</h3>
+
+    <div class="grupo"><label>Nombre: </label><input type="text" /></div>
+    <div class="grupo"><label>Domicilio: </label><input type="text" placeholder="<calle, numero y localidad>" /></div>
+    <div class="grupo"><label>País de origen: </label>
+      <select>
+        <option>España</option>
+        <option>Otro</option>
+      </select>
+    </div>
+
+    <div class="grupo"><label>Fecha de nacimiento: </label><input type="text" placeholder="dd/mm/aaaa" /></div>
+    <div class="grupo"><label>Correo electrónico: </label><input type="email" /></div>
+    <div class="grupo"><label>Teléfono: </label><input type="tel" /></div>
+
+    <div class="grupo">
+      <label>Estado civil: </label>
+      <input type="radio" name="ec" /> Solter@
+      <input type="radio" name="ec" /> Casad@
+      <input type="radio" name="ec" /> Separad@
+      <input type="radio" name="ec" /> Viud@
+    </div>
+
+    <div class="grupo">
+      <label>Sexo: </label>
+      <input type="radio" name="sx" /> Hombre
+      <input type="radio" name="sx" /> Mujer
+    </div>
+  </div>
+
+  <div class="box">
+    <h3 style="text-align:right; margin-top:0;">Otra información de interés</h3>
+
+    <p><label>Seleccione los componentes electrónicos con los que habitualmente trabajas:</label></p>
+    <select size="4" multiple>
+      <option>Móvil</option>
+      <option>Tablet</option>
+      <option>Ordenador</option>
+      <option>Ebook</option>
+    </select>
+
+    <p><label>Selecciona tus actividades favoritas:</label></p>
+    <div class="grupo">
+      <input type="checkbox" /> Hacer deporte
+      <input type="checkbox" /> Salir con mis amigos<br>
+      <input type="checkbox" /> Ver series, pelis,...
+      <input type="checkbox" /> Realizar rutas de senderismo<br>
+      <input type="checkbox" /> Ir al cine
+      <input type="checkbox" /> Escuchar música
+    </div>
+
+    <p><label>Explique brevemente el motivo por el que desea ingresar en nuestro club:</label></p>
+    <textarea></textarea>
+
+    <div class="grupo">
+      <label>Elige o escribe tu peli favorita: </label>
+      <input type="text" />
+    </div>
+  </div>
+
+  <div class="botones">
+    <button>Enviar</button>
+    <button>Cancelar</button>
+  </div>
+</div>
+</body>
+</html>
