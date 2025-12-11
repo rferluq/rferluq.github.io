@@ -5,6 +5,8 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;  
+    align-items: center;    
   }
 
   .box1 {
@@ -38,7 +40,7 @@ body {
   .grupo { 
     margin-bottom: 12px; 
   }
-  
+
   input, select, textarea {
     padding: 6px;
     border: 1px solid #999;
