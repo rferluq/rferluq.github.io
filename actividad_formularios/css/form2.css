@@ -7,7 +7,16 @@ body {
     justify-content: center;
   }
 
-  .box {
+  .box1 {
+    background: #a76407;
+    padding: 20px;
+    border-radius: 20px;
+    width: 700px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+  }
+
+  .box2 {
     background: #dca558;
     padding: 20px;
     border-radius: 20px;
