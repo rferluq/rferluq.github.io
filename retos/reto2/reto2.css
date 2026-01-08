@@ -1,0 +1,73 @@
+@font-face{
+ font-family: LexendDeca;
+ src: url('Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+ font-weight: 400;
+}
+
+body {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: LexendDeca;
+}
+
+.bloqueAll {
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 0px;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+       
+}
+
+.bloque1 {
+    display: block;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    margin-left: 20%;
+    width: 20%;
+    height: 500px;
+}
+
+.bloque2 {
+    display: block;
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0%;
+    width: 20%;
+    height: 500px;
+}
+
+.bloque3 {
+    display: block;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    width: 20%;
+    height: 500px;
+    margin-right: 20%;
+}
+
+.icon {
+    padding: 10%;
+    padding-bottom: 2%;
+}
+
+.info{
+    padding: 10%;
+    padding-top: 2%;
+}
+
+h2{
+    padding: 10%;
+    padding-bottom: 2%;
+}
+
+.LearnMore{
+    display: block;
+    border: 2px solid white;
+    width: 30%;
+    margin: 10%;
+    padding: 5%;
+}
