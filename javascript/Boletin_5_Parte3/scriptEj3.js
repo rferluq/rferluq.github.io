@@ -1,6 +1,6 @@
     function mostrarEstacion() {
-      var estaciones = ["invierno", "primavera", "verano", "otoño"];
-      var numero = parseInt(document.getElementById("numero").value);
+      let estaciones = ["invierno", "primavera", "verano", "otoño"];
+      let numero = parseInt(document.getElementById("numero").value);
 
       if (numero >= 1 && numero <= 4) {
         document.getElementById("resultado").innerHTML = "<b>" + estaciones[numero - 1] + "</b>";

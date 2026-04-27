@@ -1,15 +1,15 @@
-    var FACTOR = 1.60934;
+    let FACTOR = 1.60934;
 
     function kmAMillas() {
-      var km = parseFloat(document.getElementById("km").value);
-      var millas = km / FACTOR;
+      let km = parseFloat(document.getElementById("km").value);
+      let millas = km / FACTOR;
       document.getElementById("resultado1").innerHTML =
         km + " km = " + millas.toFixed(4) + " millas";
     }
 
     function millasAKm() {
-      var millas = parseFloat(document.getElementById("millas").value);
-      var km = millas * FACTOR;
+      let millas = parseFloat(document.getElementById("millas").value);
+      let km = millas * FACTOR;
       document.getElementById("resultado2").innerHTML =
         millas + " millas = " + km.toFixed(4) + " km";
     }

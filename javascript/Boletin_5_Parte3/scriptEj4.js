@@ -1,7 +1,7 @@
  function mostrarEstacion() {
-      var mes = document.getElementById("mes").value.toLowerCase().trim();
-      var estacion = "";
-      var div = document.getElementById("resultado");
+      let mes = document.getElementById("mes").value.toLowerCase().trim();
+      let estacion = "";
+      let div = document.getElementById("resultado");
 
       switch (mes) {
         case "diciembre":

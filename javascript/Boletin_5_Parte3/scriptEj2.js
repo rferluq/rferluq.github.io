@@ -1,6 +1,6 @@
  function comprobarDivisible() {
-      var numero = parseInt(document.getElementById("numero").value);
-      var div = document.getElementById("resultado");
+      let numero = parseInt(document.getElementById("numero").value);
+      let div = document.getElementById("resultado");
       div.style.display = "block";
 
       if (numero % 2 === 0) {

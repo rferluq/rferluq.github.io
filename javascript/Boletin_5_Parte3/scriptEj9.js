@@ -1,6 +1,6 @@
     function contarCaracteres() {
-      var texto = document.getElementById("texto").value;
-      var numCaracteres = texto.length;
+      let texto = document.getElementById("texto").value;
+      let numCaracteres = texto.length;
 
       document.getElementById("resultado").innerHTML =
         "La cadena contiene " + numCaracteres + " caracteres.";

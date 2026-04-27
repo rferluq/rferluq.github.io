@@ -1,6 +1,6 @@
     function compararPalabras() {
-      var palabra1 = document.getElementById("palabra1").value;
-      var palabra2 = document.getElementById("palabra2").value;
+      let palabra1 = document.getElementById("palabra1").value;
+      let palabra2 = document.getElementById("palabra2").value;
 
       if (palabra1.length > palabra2.length) {
         alert("La palabra más larga es: \"" + palabra1 + "\" con " + palabra1.length + " caracteres.");

@@ -5,10 +5,10 @@
     ];
 
     function mostrarRecetas() {
-      var html = "<table border='1'>";
+      let html = "<table border='1'>";
       html += "<tr><th>ID</th><th>Nombre receta</th><th>Ingredientes</th></tr>";
 
-      for (var i = 0; i < recetas.length; i++) {
+      for (let i = 0; i < recetas.length; i++) {
         html += "<tr>";
         html += "<td>" + recetas[i].id + "</td>";
         html += "<td>" + recetas[i].nombrereceta + "</td>";

@@ -1,8 +1,8 @@
 function calcularIVA() {
-      var nombre = document.getElementById("nombre").value;
-      var cantidad = parseFloat(document.getElementById("cantidad").value);
-      var iva = 0;
-      var total = 0;
+      let nombre = document.getElementById("nombre").value;
+      let cantidad = parseFloat(document.getElementById("cantidad").value);
+      let iva = 0;
+      let total = 0;
 
       if (cantidad >= 5000) {
         iva = 10;
