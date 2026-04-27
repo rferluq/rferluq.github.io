@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 2rem 1rem;
+    background: #f5f5f5;
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.info {
+    background: #e8f4f8;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #0066cc;
+    text-align: left;
+}
+
+.coordenadas {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 4px;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.celda {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.celda:hover {
+    border-color: #999;
+    background: #f0f0f0;
+}
+
+.celda.visitada {
+    background: #f0f0f0;
+    border-color: #999;
+    color: #999;
+}
+
+.mensaje {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 30px;
+}
+
+.mensaje.brujula {
+    background: #e8f4f8;
+    color: #333;
+    border-left: 4px solid #0066cc;
+}
+
+.mensaje.ganaste {
+    background: #e8f8e8;
+    color: #00aa00;
+    border-left: 4px solid #00aa00;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.75rem 2rem;
+    font-size: 16px;
+    background: #f0f0f0;
+    color: #333;
+    border: 2px solid #0066cc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+button:hover {
+    border-color: #0066cc;
+    background: #e8f4f8;
+}
+
+.intentos {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 1rem;
+}
