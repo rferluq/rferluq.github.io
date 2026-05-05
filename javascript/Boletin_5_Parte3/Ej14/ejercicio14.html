@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="cssEj14.css">
+    <script src="scriptEj14.js" defer></script>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" class="pantalla" readonly>
+        
+        <div class="botones">
+            <button class="boton" onclick="borrar()">C</button>
+            <button class="boton" onclick="agregar('/')">/</button>
+            <button class="boton" onclick="agregar('*')">*</button>
+            <button class="boton" onclick="retroceder()">←</button>
+            
+            <button class="boton" onclick="agregar('7')">7</button>
+            <button class="boton" onclick="agregar('8')">8</button>
+            <button class="boton" onclick="agregar('9')">9</button>
+            <button class="boton" onclick="agregar('-')">-</button>
+            
+            <button class="boton" onclick="agregar('4')">4</button>
+            <button class="boton" onclick="agregar('5')">5</button>
+            <button class="boton" onclick="agregar('6')">6</button>
+            <button class="boton" onclick="agregar('+')">+</button>
+            
+            <button class="boton" onclick="agregar('1')">1</button>
+            <button class="boton" onclick="agregar('2')">2</button>
+            <button class="boton" onclick="agregar('3')">3</button>
+            <button class="boton resultado" onclick="calcular()">=</button>
+            
+            <button class="boton" onclick="agregar('0')">0</button>
+            <button class="boton" onclick="agregar('.')">.</button>
+        </div>
+    </div>
+</body>
+</html>
