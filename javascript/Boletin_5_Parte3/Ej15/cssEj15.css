@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.formulario input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.formulario button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #45a049;
+}
+
+.formulario button:active {
+    background-color: #3d8b40;
+}
+
+.usuarios h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.usuario {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario-nombre {
+    font-weight: bold;
+    color: #333;
+}
+
+.usuario-dni {
+    color: #666;
+    font-size: 14px;
+}
+
+.vacio {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
