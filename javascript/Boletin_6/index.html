@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Recetas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>📋 Tabla de Recetas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre Receta</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+            <tr class="fila-par" style="background-color: #f2f2f2;">
+                <td>1</td>
+                <td>Salmorejo</td>
+                <td>Tomate, aceite y pan</td>
+            </tr>
+            <tr class="fila-impar" style="background-color: #d4e6f1;">
+                <td>2</td>
+                <td>Gachas</td>
+                <td>Harina, agua y azúcar</td>
+            </tr>
+            <tr class="fila-par" style="background-color: #85c1e2;">
+                <td>3</td>
+                <td>Migas</td>
+                <td>Pan, ajo y aceite</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="btnReset" class="btn-reset">🔄 Resetear Colores</button>
+
+
+</body>
+</html>
