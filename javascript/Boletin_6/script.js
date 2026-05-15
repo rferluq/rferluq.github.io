@@ -1,10 +1,34 @@
-// Array con 5 colores para filas pares (empezando con #f2f2f2)
+// Array con 5 colores para filas pares
 const coloresPares = ['#f2f2f2', '#ffffff', '#e8e8e8', '#d0d0d0', '#b8b8b8'];
 
-// Array con 5 colores para filas impares (empezando con #d4e6f1)
+// Array con 5 colores para filas impares
 const coloresImpares = ['#d4e6f1', '#85c1e2', '#5dade2', '#3498db', '#2980b9'];
 
-// Inicializar: cargar colores del Local Storage
+// Guardar los colores iniciales del HTML al cargar la página
+let coloresInicialesDelHTML = [];
+
+function guardarColoresInicialesDelHTML() {
+    const filas = document.querySelectorAll('#tabla tr');
+    coloresInicialesDelHTML = [];
+    
+    filas.forEach(fila => {
+        coloresInicialesDelHTML.push(fila.style.backgroundColor);
+    });
+}
+
+// Guardar los colores actuales en Local Storage
+function guardarColores() {
+    const filas = document.querySelectorAll('#tabla tr');
+    const colores = [];
+    
+    filas.forEach(fila => {
+        colores.push(fila.style.backgroundColor);
+    });
+    
+    localStorage.setItem('coloresRecetas', JSON.stringify(colores));
+}
+
+// Cargar colores del Local Storage (solo si existen)
 function cargarColores() {
     const coloresGuardados = localStorage.getItem('coloresRecetas');
     
@@ -18,18 +42,6 @@ function cargarColores() {
             }
         });
     }
-}
-
-// Guardar los colores actuales en Local Storage
-function guardarColores() {
-    const filas = document.querySelectorAll('#tabla tr');
-    const colores = [];
-    
-    filas.forEach(fila => {
-        colores.push(fila.style.backgroundColor);
-    });
-    
-    localStorage.setItem('coloresRecetas', JSON.stringify(colores));
 }
 
 // Cambiar color de una fila
@@ -60,22 +72,17 @@ function cambiarColor(fila, esParOImpar) {
     guardarColores();
 }
 
-// Asignar colores iniciales a las filas
-function asignarColoresIniciales() {
+// Resetear a los colores iniciales del HTML
+function resetearColores() {
     const filas = document.querySelectorAll('#tabla tr');
+    
     filas.forEach((fila, index) => {
-        if (fila.classList.contains('fila-par')) {
-            fila.style.backgroundColor = coloresPares[0];
-        } else {
-            fila.style.backgroundColor = coloresImpares[0];
+        if (coloresInicialesDelHTML[index]) {
+            fila.style.backgroundColor = coloresInicialesDelHTML[index];
         }
     });
+    
     guardarColores();
-}
-
-// Resetear a colores originales
-function resetearColores() {
-    asignarColoresIniciales();
 }
 
 // Agregar evento al botón de resetear
@@ -92,9 +99,8 @@ filas.forEach((fila, index) => {
     });
 });
 
-// Cargar colores cuando abre la página, o asignar iniciales
-if (localStorage.getItem('coloresRecetas')) {
-    cargarColores();
-} else {
-    asignarColoresIniciales();
-}
+// Guardar colores iniciales del HTML
+guardarColoresInicialesDelHTML();
+
+// Cargar colores guardados si existen
+cargarColores();

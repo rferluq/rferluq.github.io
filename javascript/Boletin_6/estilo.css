@@ -58,4 +58,27 @@ tbody tr:hover {
     background-color: #f3e5f5;
 }
 
+.info {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-reset {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reset:hover {
+    background-color: #ff5252;
+}
 
