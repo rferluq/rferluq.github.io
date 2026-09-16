@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Pro - Gestión de Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Una aplicación moderna y eficiente para la gestión de tu agenda personal.">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <h1> Nombre del Alumno: Rafael Emilio Fernández Luque</h1>
+            <h1>Agenda</h1>
+
+        </header>
+
+        <main>
+            <section class="seccion-formulario">
+                <div class="tarjeta">
+                    <h2 id="titulo-formulario">Añadir Contacto</h2>
+                    <form id="formulario-contacto">
+                        <input type="hidden" id="modo-edicion" value="false">
+                        <div class="grupo-formulario">
+                            <label for="contacto-id">ID Único</label>
+                            <input type="text" id="contacto-id" placeholder="Ej. C001" required>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="contacto-nombre">Nombre Completo</label>
+                            <input type="text" id="contacto-nombre" placeholder="Nombre del contacto" required>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="contacto-direccion">Dirección</label>
+                            <input type="text" id="contacto-direccion" placeholder="Calle, Ciudad, etc." required>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="contacto-telefono">Teléfono</label>
+                            <input type="tel" id="contacto-telefono" placeholder="+34 000 000 000" required>
+                        </div>
+                        <div class="acciones-formulario">
+                            <button type="submit" id="boton-enviar" class="boton-primario">Guardar Contacto</button>
+                            <button type="button" id="boton-cancelar" class="boton-secundario oculto">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="seccion-lista">
+                <div class="tarjeta">
+                    <div class="cabecera-lista">
+                        <h2>Mis Contactos</h2>
+                        <div class="acciones-globales">
+                            <button id="boton-editar-global" class="boton-accion boton-editar">
+                                <span>Editar</span>
+                            </button>
+                            <button id="boton-borrar-global" class="boton-accion boton-borrar">
+                                <span>Borrar</span>
+                            </button>
+                        </div>
+                        <!-- Se actualizarà cada vez que se añada un contacto -->
+                        <span id="contador-contactos" class="placa">0 contactos</span>
+                    </div>
+                    <div class="contenedor-tabla">
+                        <table id="tabla-contactos">
+                            <thead>
+                                <tr>
+                                    <th>Sel.</th>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Dirección</th>
+                                    <th>Teléfono</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lista-contactos">
+                                <!-- Los contactos se cargarán aquí dinámicamente -->
+                            </tbody>
+                        </table>
+                        <div id="estado-vacio" class="estado-vacio">
+                            <p>No hay contactos en la agenda. ¡Añade el primero!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Agenda.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

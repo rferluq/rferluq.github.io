@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(68, 1, 77);
+    color: white;
+    
+}
+
+td{
+    text-align: center;
+}
+th{
+    text-align: center;
+}
+
+.hora-horario{
+    background-color: darksalmon !important; /* busqué en internet que !important obliga a usar este por encima de otros (sin esto no se me aplicaba) */
+    font-style: oblique;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+#botonatras {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.tabla{
+    display: block;             
+    margin: 2% auto; 
+    padding: 0px;
+    height: auto;  
+    width: 70%;
+}
