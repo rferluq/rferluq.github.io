@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+@media (max-width: 400px) {   
+    body {
+        padding: 100px 20px;
+    }  
+
+}
+
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 100px 20px;
+    font-size: 12px;
+    font-family: Inter;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: hsl(0, 0%, 12%);
+    max-width: 320px;
+    border-radius: 20px;
+}
+
+.card {
+
+}
+
+img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+
+}
+
+h3 {
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 30px;
+}
+
+p {
+    color: hsl(0, 0%, 82%);
+    margin-bottom: 30px;
+    font-size: medium;
+}
+
+.rrss {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(0, 0%, 100%);
+}

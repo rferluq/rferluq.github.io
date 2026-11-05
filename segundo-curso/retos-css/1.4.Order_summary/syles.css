@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+@media (max-width: 400px) {   
+    .container {
+        text-align: center;
+        background-color: hsl(0, 0%, 100%);
+        width: 330px;
+        border-radius: 20px;
+    }
+    
+    .head {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        display: block;
+    }
+    
+    p {
+        font-family: Lexend Deca;
+        color: hsl(220, 15%, 55%);
+        line-height: 1.5;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }   
+}
+
+
+body {
+    background-color: hsl(225, 100%, 88%);
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 15px;
+    font-family: Figtree;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    z-index: -1;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    width: 360px;
+    border-radius: 20px;
+    
+
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+h1 {
+    font-family: Outfit;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    display: left;
+}
+
+p {
+    font-family: Lexend Deca;
+    color: hsl(220, 15%, 55%);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    background-color: hsl(240, 100%, 98%);
+    width: 18rem;
+    height: 4rem;
+    border-radius: 5px;
+}
+
+.music-icon {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+
+.plan-container {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;           
+    margin-left: 10px;      
+    text-align: left;       
+}
+
+.price-text {
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: hsl(0, 0%, 0%);
+}
+
+.price {
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: hsl(223, 13%, 57%);
+    margin-top: 4px;        
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: underline; 
+    margin-right: 20px; 
+}
+
+.paybutton {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.cancelbutton {
+    color: hsl(210, 1%, 42%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+}

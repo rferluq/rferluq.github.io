@@ -1,0 +1,49 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    border-radius: 20px;
+
+}
+
+.qr-code {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+h1 {
+    font-family: Outfit;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: Lexend Deca;
+    color: hsl(220, 15%, 55%);
+    line-height: 1.5;
+    margin: 15px;
+}

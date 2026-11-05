@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: hsl(47, 88%, 63%)    ;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 15px;
+    font-family: Figtree;
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    text-align: left;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px hsl(0, 0%, 0%);
+
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: hsl(47, 88%, 63%);
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.pfp {
+    width: 5%;
+    border-radius: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+h1 {
+    font-family: Outfit;
+    margin: 10px;
+    font-size: 1.5rem;
+    display: left;
+}
+
+h3 {
+    color: hsl(0, 0%, 42%);
+    margin: 10px;
+    font-size: 1rem;
+    display: left;
+}
+
+.pfp {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom:5px;
+}
+
+p {
+    font-family: Lexend Deca;
+    color: hsl(220, 15%, 55%);
+    line-height: 1.5;
+    margin: 15px;
+}
