@@ -14,8 +14,18 @@ Estudiante de 2º del Ciclo Formativo de Grado Superior en Desarrollo de Aplicac
 ## Habilidades técnicas
 
 -**Lenguajes**: Java, JavaScript, C#, HTML, CSS 
+
+
 -**Frameworks y tecnologías web**: React, Node.js, .NET, WordPress 
+
+
 -**Bases de datos**: MySQL, PostgreSQL, MariaDB 
+
+
 -**Entornos de desarrollo**: NetBeans, Eclipse, IntelliJ IDEA, Visual Studio, VS Code 
+
+
 -**Control de versiones:** Git, GitHub 
+
+
 -**Despliegue y documentación de APIs**: Vercel, Swagger 
