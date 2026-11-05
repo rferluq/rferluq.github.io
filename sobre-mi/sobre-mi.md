@@ -1,6 +1,6 @@
 # Rafael Emilio
 
-&#91;rferluq@gmail.com\]
+rferluq@gmail.com
 
 ## Perfil
 
