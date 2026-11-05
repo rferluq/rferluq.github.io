@@ -1,44 +1,83 @@
-body{
-    background-color: rgb(68, 1, 77);
-    color: white;
-    
+/* Hereda colores y fuentes del menú (variables de :root en menu.css).
+   Ruta válida para primer-curso/horario_1DAW/ y segundo-curso/horario_2DAW/ */
+@import url("../../menu.css");
+
+body {
+    padding: 32px max(24px, calc((100% - var(--ancho)) / 2)) 64px;
 }
 
-td{
-    text-align: center;
-}
-th{
-    text-align: center;
-}
-
-.hora-horario{
-    background-color: darksalmon !important; /* busqué en internet que !important obliga a usar este por encima de otros (sin esto no se me aplicaba) */
-    font-style: oblique;
-    text-decoration: underline;
-    vertical-align: middle;
+h1 {
+    margin: 0 0 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--borde);
+    text-align: left;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
 }
 
+/* Botón de volver: el estilo de enlace viene de #botonatras en menu.css;
+   aquí solo se quita el aspecto de botón */
 #botonatras {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-    font-size: 0.8em;
-    background-color: rgb(83, 83, 83);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
 }
 
+/* ===== Contenedor de la tabla y de la leyenda ===== */
+.tabla {
+    display: block;
+    width: 100%;
+    margin: 24px 0 0;
+    padding: 0;
+    background-color: var(--superficie);
+    border-radius: 6px;
+    overflow-x: auto;
+}
 
-h1{
+.tabla table {
+    margin: 0;
+    border-color: var(--borde);
+}
+
+.tabla ul {
+    margin: 0;
+    padding: 20px 24px 20px 44px;
+    line-height: 1.8;
+}
+
+/* ===== Tabla ===== */
+td,
+th {
     text-align: center;
+    vertical-align: middle;
+    padding: 12px 10px;
 }
 
-.tabla{
-    display: block;             
-    margin: 2% auto; 
-    padding: 0px;
-    height: auto;  
-    width: 70%;
+.table-bordered td,
+.table-bordered th {
+    border-color: var(--borde);
+}
+
+.tabla thead th {
+    background-color: var(--acento);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Columna de horas (!important para que no la tape Bootstrap) */
+.hora-horario {
+    background-color: #e9edf2 !important;
+    color: var(--texto);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Fila de descanso (sustituye al color puesto en línea en el HTML) */
+td[colspan] {
+    background-color: var(--fondo) !important;
+    color: var(--texto-suave);
 }
