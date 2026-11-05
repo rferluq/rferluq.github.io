@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Menú para subir distintas actividades">
-    <meta name="keywords" content="menu, menú, personal, HTML, CSS">
+    <meta name="description"
+        content="Recursos de mi aprendizaje: proyectos de primer y segundo curso y proyectos personales">
+    <meta name="keywords" content="menu, menú, personal, HTML, CSS, DAW, proyectos">
     <meta name="author" content="rferluq">
-    <title>Menú</title>
-    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <title>Recursos de mi aprendizaje</title>
+    <link rel="stylesheet" type="text/css" href="menu.css" />
 </head>
+
 <body>
     <header>
-        <a href="https://github.com/rferluq" title="Enlace a mi página de GitHub"><h1 id="principal">Mis proyectos</h1></a>
-       
+        <h1 id="principal">Recursos de mi aprendizaje</h1>
+        <p>Proyectos y actividades de mi formación</p>
     </header>
 
-    <div class="botones">
-    <div>
-    <a href="./ejercicio3css_lenguajemarcas/index.html" class="boton-a"><h2>Proyecto Restaurante CSS</h2></a>
-    </div>
-    <div>
-    <a href="./horario_1DAW/index.html" class="boton-a"><h2>Horario 1º</h2></a>
-    </div>
-    <div>
-    <a href="./horario_2DAW/index.html" class="boton-a"><h2>Horario 2º</h2></a>
-    </div>
-    <div>
-    <a href="./retos/index.html" class="boton-a"><h2>Retos</h2></a>
-    </div>
-    <div>
-    <a href="actividad_formularios/index.html" class="boton-a"><h2>Formularios</h2></a>
-    </div>
-    <div>
-    <a href="javascript/index.html" class="boton-a"><h2>JavaScript</h2></a>
-    </div>
-    </div>
-    
+    <main class="botones">
+        <!-- Para añadir una sección nueva: copia un bloque <a> y cambia href, título y descripción.
+             El href apunta a la carpeta (su index.html se abre solo). -->
+        <a href="./primer-curso/" class="boton-a">
+            <h2>Primer Curso</h2>
+            <p>Restaurante CSS, horario, retos, formularios y JavaScript</p>
+        </a>
+        <a href="./segundo-curso/" class="boton-a">
+            <h2>Segundo Curso</h2>
+            <p>Actividades del segundo año</p>
+        </a>
+        <a href="./proyectos-personales/" class="boton-a">
+            <h2>Proyectos personales</h2>
+            <p>Proyectos que hago por mi cuenta</p>
+        </a>
+        <a href="./sobre-mi/" class="boton-a">
+            <h2>Sobre mí</h2>
+            <p>Quién soy y qué estoy aprendiendo</p>
+        </a>
+        <a href="https://github.com/rferluq" class="boton-a externo" target="_blank" rel="noopener noreferrer"
+            title="Enlace a mi página de GitHub">
+            <h2>Mi repositorio</h2>
+            <p>github.com/rferluq</p>
+        </a>
+    </main>
 </body>
+
 </html>

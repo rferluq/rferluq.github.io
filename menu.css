@@ -1,72 +1,169 @@
-body{
-    background-color: rgba(53, 0, 138, 0.671);
-    color: white;
+/* =====================================================================
+   menu.css — hoja de estilos única para todos los menús de la web
+   Para cambiar colores, edita solo las variables de :root.
+   ===================================================================== */
+
+:root {
+    --fondo: #f4f5f7;
+    --superficie: #ffffff;
+    --texto: #1c2430;
+    --texto-suave: #5b6675;
+    --borde: #d9dde3;
+    --acento: #0f5f8c;
+    --acento-oscuro: #0a4465;
+    --ancho: 960px;
+}
+
+* { box-sizing: border-box; }
+
+body {
     margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 16px;  
+    padding-bottom: 64px;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-header{
-    background-color: rgb(68, 1, 77);
-    color: white;
-    text-align: center;
-    height: 150px;
-    margin: 0px;
-    padding: 10px 0;    
-    font-weight: bold;
-    border-bottom: 3px solid #DDC3A5; 
-}
-
-#principal{
-    padding: 50px;
-    font-size: 45px;
-}
-
-
-h1{
-    color: white;
-}
-a{
+a {
+    color: inherit;
     text-decoration: none;
-    color: none;
 }
 
-.botones{
-    display: flex;
-    flex-wrap: wrap;     
-    gap: 10px;
-    justify-content: center;
+a:focus-visible {
+    outline: 3px solid var(--acento);
+    outline-offset: 3px;
 }
 
-.boton-a{
-    background-color: #482fd3;    
-    display: block;          
-    color: white;
-    min-width: fit-content;
-    width: 300px;    
-    margin: 10px; 
-    padding: 3%;
-    height: auto;  
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;  
-    cursor: pointer;
+/* ===== Cabecera ===== */
+header {
+    background-color: var(--superficie);
+    border-bottom: 1px solid var(--borde);
+    margin-bottom: 40px;
+    padding: 32px max(24px, calc((100% - var(--ancho)) / 2)) 28px;
+    text-align: left;
 }
 
+header h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: var(--texto-suave);
+}
+
+/* Enlace de volver (aparece encima del título en los submenús) */
+#botonatras {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--acento);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#botonatras:hover {
+    color: var(--acento-oscuro);
+    text-decoration: underline;
+}
+
+/* ===== Menú de tarjetas ===== */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    width: min(var(--ancho), 100% - 48px);
+    margin: 0 auto;
+}
+
+.boton-a {
+    display: block;
+    position: relative;
+    padding: 22px 48px 22px 22px;
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    border-left: 4px solid var(--acento);
+    border-radius: 6px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.boton-a::after {
+    content: "›";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--acento);
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.boton-a h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.boton-a p {
+    margin: 6px 0 0;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
 
 .boton-a:hover {
-    background-color: #618afa;
+    border-color: var(--acento);
+    box-shadow: 0 2px 10px rgba(28, 36, 48, 0.08);
 }
 
-#botonatras {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+/* Enlaces que salen de la web (GitHub, otros repositorios) */
+.boton-a.externo::after { content: "↗"; font-size: 1.2rem; }
 
-    font-size: 0.8em;
-    background-color: rgb(83, 83, 83);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+/* ===== Página "Sobre mí" (contenido Markdown) ===== */
+.markdown {
+    width: min(var(--ancho), 100% - 48px);
+    margin: 0 auto;
+    padding: 32px;
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+}
+
+.markdown > * { max-width: 72ch; }
+
+.markdown h1,
+.markdown h2,
+.markdown h3 { line-height: 1.25; }
+
+.markdown h1 { margin-top: 0; }
+
+.markdown a { color: var(--acento); text-decoration: underline; }
+.markdown img { max-width: 100%; height: auto; }
+
+.markdown code {
+    background: var(--fondo);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.markdown pre {
+    background: var(--fondo);
+    padding: 14px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.markdown pre code { background: none; padding: 0; }
+
+@media (max-width: 480px) {
+    .markdown { padding: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
 }
