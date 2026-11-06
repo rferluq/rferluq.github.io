@@ -1,0 +1,41 @@
+body{
+    background-color: bisque;
+    margin-right: 100px;
+}
+
+.main{
+    position: relative;
+    display: flex;
+}
+
+.bloqueCartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    width: 100%;
+    padding-top: 60px;
+    margin-left: 100px;
+}
+
+.visible{
+    width: 100px;
+}
+
+.oculto{
+    display: none;
+    width: 100px;
+}
+
+.reloj{
+    position: absolute;
+    top:0;
+    right: 0;
+    border: 3px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}

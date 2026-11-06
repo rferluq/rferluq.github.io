@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    background-color: #f6f1e7;
+    color: #3b3a36;
+}
+
+header {
+    background-color: #2f6f5e;
+    color: #fdfaf3;
+    text-align: center;
+    padding: 35px 10px;
+    border-radius: 0 0 40px 40px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+}
+
+header p {
+    margin: 0;
+    color: #cfe5dc;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2f6f5e;
+}
+
+/* Paneles */
+#sesion,
+#consultas,
+#formularios form {
+    background-color: #fffdf8;
+    padding: 22px;
+    border: 2px solid #e4dccb;
+    border-radius: 18px;
+}
+
+#botones, #busqueda, #formLogin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#estadoSesion {
+    margin: 10px 0 0 0;
+    color: #7a7466;
+    font-style: italic;
+}
+
+/* Botones e inputs */
+button {
+    background-color: #2f6f5e;
+    color: #fdfaf3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24584a;
+}
+
+input {
+    background-color: white;
+    color: #3b3a36;
+    padding: 10px 14px;
+    border: 2px solid #e4dccb;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2f6f5e;
+}
+
+/* Mensaje de estado */
+#mensaje {
+    padding: 12px 18px;
+    border-radius: 25px;
+    display: none;
+}
+
+#mensaje.ok {
+    display: block;
+    background-color: #dff0e5;
+    color: #226043;
+}
+
+#mensaje.error {
+    display: block;
+    background-color: #f7dcd6;
+    color: #9a3324;
+}
+
+/* Formularios */
+#formularios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#formularios form {
+    flex: 1;
+    min-width: 280px;
+}
+
+#formularios label {
+    display: block;
+    margin: 12px 0 6px 6px;
+    font-size: 14px;
+    color: #7a7466;
+}
+
+#formularios input {
+    width: 100%;
+}
+
+#formularios button {
+    margin-top: 18px;
+}
+
+/* Tarjetas */
+#contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 230px;
+    background-color: #fffdf8;
+    padding: 22px;
+    border: 2px solid #e4dccb;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    border-color: #2f6f5e;
+}
+
+.tarjeta h3 {
+    margin: 0 0 6px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    color: #2f6f5e;
+}
+
+.tarjeta .modelo {
+    font-size: 17px;
+    margin: 0 0 6px 0;
+}
+
+.tarjeta .anio {
+    display: inline-block;
+    background-color: #efe7d3;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+}
+
+.tarjeta .id {
+    font-size: 11px;
+    color: #a39d8e;
+    word-break: break-all;
+}
+
+
+#botonVolver {
+    margin-bottom: 20px;
+}
+
+/* Aviso temporal (toast) */
+#toast {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #2f6f5e;
+    color: #fdfaf3;
+    padding: 14px 26px;
+    border-radius: 25px;
+}
+
+#toast.error {
+    background-color: #c0533f;
+}
