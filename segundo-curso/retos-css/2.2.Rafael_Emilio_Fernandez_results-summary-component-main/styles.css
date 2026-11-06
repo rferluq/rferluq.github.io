@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    overflow: hidden;
+    font-size: 18px;
+    background-color: hsl(221, 100%, 96%);
+    align-items: center;
+    font-family: "Hanken-Grotesk";
+}
+
+.resultado{
+    grid-column: 6;
+    grid-row: 3;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 12px;
+    width: 300px;
+    position: relative;
+    z-index: 2;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color: white;
+}
+
+.resultado h2{
+    color: rgb(191, 191, 191);
+    margin-top: 30px;
+}
+
+.totalPuntos{
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 0;
+}
+
+.totalPuntos h1{
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.totalPuntos h6{
+    font-size: 15px;
+    margin-top:-40px;
+    color: rgb(174, 173, 173);
+}
+
+.resultado > h1{
+    margin:20px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.resultado p {
+    text-align: center;
+    margin-top: -15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    color: rgb(174, 173, 173);
+    font-size: 14px;
+}
+
+
+
+.summary{
+    grid-column: 7;
+    grid-row: 3;
+    background-color: white;
+    border-radius: 0 12px 12px 0;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    margin-left: -30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary h2{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.listaPuntuaciones{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.listaPuntuaciones .Reaction{
+    align-items: center;
+    width: 90%;
+    background-color: hsl(0, 100%, 77%);
+    color: hsl(0, 69%, 42%);
+    display: flex;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.Reaction img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Reaction img+span{
+    margin-left: 5px;
+}
+
+.Reaction .puntos{
+    margin-left: 35px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: black;
+}
+
+.Reaction .puntos+span{
+    color: grey;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.listaPuntuaciones .Memory{
+    align-items: center;
+
+    width: 90%;
+    background-color: hsl(39, 96%, 82%);
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.Memory img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Memory img+span{
+    margin-left: 5px;
+}
+
+.Memory .puntos{
+    margin-left: 35px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: black;
+}
+
+.Memory .puntos+span{
+    color: grey;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.listaPuntuaciones .Verbal{
+    align-items: center;
+
+    width: 90%;
+    background-color: hsl(166, 90%, 84%);
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.Verbal img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Verbal img+span{
+    margin-left: 5px;
+}
+
+.Verbal .puntos{
+    margin-left: 50px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: black;
+}
+
+.Verbal .puntos+span{
+    color: grey;
+    margin-right: 0px;
+    margin-left: 1px;
+}
+
+.listaPuntuaciones .Visual{
+    align-items: center;
+
+    width: 90%;
+    background-color: hsl(233, 64%, 81%);
+    color: hsl(234, 85%, 45%);
+    display: flex;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.Visual img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Visual img+span{
+    margin-left: 5px;
+}
+
+.Visual .puntos{
+    margin-left: 55px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: black;
+}
+
+.Visual .puntos+span{
+    color: grey;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.summary button{
+    margin-left: 50px;
+    height: 40px;
+    width: 75%;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    color: white;
+}
+
+@media (max-width: 400px) {  
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resultado{
+        width: 105%;
+        height: 100vh;
+        margin-top: -10px;
+        border-radius: 0px;
+        border-bottom-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+    }
+
+    .summary {
+        width: 115%;
+        margin-top: -10px;
+        height: 100vh;
+    }
+
+    .resultado > h1{
+        margin:20px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .resultado p {
+        text-align: center;
+        margin-top: -15px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 10px;
+        color: rgb(174, 173, 173);
+        font-size: 20px;
+    }
+
+    .Reaction .puntos{
+        margin-left: 45%;
+        margin-right: 0px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .Reaction .puntos+span{
+        color: grey;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    
+    .Memory .puntos{
+        margin-left: 45%;
+        margin-right: 0px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .Memory .puntos+span{
+        color: grey;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    
+    .Verbal .puntos{
+        margin-left: 50%;
+        margin-right: 0px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .Verbal .puntos+span{
+        color: grey;
+        margin-right: 0px;
+        margin-left: 1px;
+    }
+    
+    .Visual .puntos{
+        margin-left: 50%;
+        margin-right: 0px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .Visual .puntos+span{
+        color: grey;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    .summary h2{
+        font-size: 25px;
+    }
+
+    .summary button{
+        margin-left: 11%;
+        height: 50px;
+        width: 80%;
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 20px;
+        color: white;
+        font-weight: bolder;
+    }
+    
+}   
