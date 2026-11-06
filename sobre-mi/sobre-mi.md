@@ -29,3 +29,5 @@ Estudiante de 2º del Ciclo Formativo de Grado Superior en Desarrollo de Aplicac
 
 
 -**Despliegue y documentación de APIs**: Vercel, Swagger 
+
+-**Cloud / Servicios en la nube**: AWS (Amazon Web Services)
