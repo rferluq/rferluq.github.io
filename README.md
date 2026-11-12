@@ -1,4 +1,4 @@
-# 🚀 Portafolio de Proyectos | Curso y Desarrollo Personal
+# Portafolio de Proyectos | Curso y Desarrollo Personal
 
 ¡Hola! 👋 Bienvenido/a a este repositorio. 
 
@@ -6,7 +6,7 @@ Este espacio está dedicado a recopilar, organizar y compartir mi evolución com
 
 ---
 
-## 🌱 Objetivos de este espacio
+## Objetivos de este espacio
 
 1. **Documentar mi aprendizaje:** Mantener un registro claro de mi progreso técnico.
 2. **Buenas prácticas:** Aplicar control de versiones, código limpio y documentación estructurada.
