@@ -281,14 +281,14 @@ body:has(#modo:checked) .status-text::after {
    7. EJEMPLO 2: ZOOM DE IMAGEN CON :target
    ========================================================================== */
    /* Miniatura en su estado normal */
-.caja-zoom {
-  width: 220px;
-  margin: 1rem auto;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 2px solid var(--border);
-  background: var(--card-bg);
-}
+   .caja-zoom {
+    width: 220px;
+    margin: 1rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    background: var(--bg-card);
+  }
 
 .caja-zoom img {
   display: block;
@@ -302,7 +302,7 @@ body:has(#modo:checked) .status-text::after {
 #imagen1:target {
   position: fixed;
   inset: 0; /* Equivalente a top: 0; right: 0; bottom: 0; left: 0; */
-  width: 100vw;
+  width: 100vw; 
   height: 100vh;
   margin: 0;
   border: none;
