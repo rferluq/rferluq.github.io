@@ -1,6 +1,6 @@
 # Portafolio de Proyectos | Curso y Desarrollo Personal
 
-¡Hola! 👋 Bienvenido/a a este repositorio. 
+Bienvenido/a a este repositorio. 
 
 Este espacio está dedicado a recopilar, organizar y compartir mi evolución como desarrollador/a. Aquí encontrarás tanto las prácticas y proyectos realizados durante mi formación académica/curso, como iniciativas personales desarrolladas por curiosidad y pasión por la tecnología.
 
