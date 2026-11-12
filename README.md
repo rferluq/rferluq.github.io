@@ -1,3 +1,14 @@
-# Proyectos y Prácticas
+# 🚀 Portafolio de Proyectos | Curso y Desarrollo Personal
 
-Este repositorio recopila los proyectos desarrollados a lo largo de mi formación, así como distintos trabajos personales creados para practicar, experimentar y seguir profundizando en el desarrollo de software. Cada directorio contiene el código fuente y la documentación específica de cada iniciativa, reflejando mi evolución técnica y mi enfoque hacia la resolución de problemas.
+¡Hola! 👋 Bienvenido/a a este repositorio. 
+
+Este espacio está dedicado a recopilar, organizar y compartir mi evolución como desarrollador/a. Aquí encontrarás tanto las prácticas y proyectos realizados durante mi formación académica/curso, como iniciativas personales desarrolladas por curiosidad y pasión por la tecnología.
+
+---
+
+## 🌱 Objetivos de este espacio
+
+1. **Documentar mi aprendizaje:** Mantener un registro claro de mi progreso técnico.
+2. **Buenas prácticas:** Aplicar control de versiones, código limpio y documentación estructurada.
+3. **Compartir conocimiento:** Dejar el código abierto para quien pueda encontrarlo útil o quiera aportar sugerencias.
+
