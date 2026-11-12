@@ -79,12 +79,12 @@
           (<code>transform: scale(1)</code>) del visor modal.
         </p>
 
-        <div class="demo-box">
-          <a href="#imagen1" class="thumb-link" aria-label="Ampliar ilustración vectorial">
-            <img class="thumb-img" alt="Ilustración vectorial de montañas al atardecer"
-              src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%231e3a8a'/%3E%3Cstop offset='55%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%23fde68a'/%3E%3C/linearGradient%3E%3ClinearGradient id='m1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%231e293b'/%3E%3Cstop offset='100%25' stop-color='%230f172a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23sky)'/%3E%3Ccircle cx='460' cy='115' r='44' fill='%23fef08a' opacity='0.95'/%3E%3Cpolygon points='0,360 190,130 390,360' fill='%23334155'/%3E%3Cpolygon points='230,360 440,110 640,360' fill='url(%23m1)'/%3E%3Cpolygon points='190,130 148,180 176,174 190,192 208,174 232,180' fill='%23f8fafc'/%3E%3Cpolygon points='440,110 392,167 422,160 440,178 460,160 488,167' fill='%23f8fafc'/%3E%3Crect y='305' width='640' height='55' fill='%230284c7' opacity='0.85'/%3E%3C/svg%3E">
-            <span class="thumb-hint">🔍 Clic para ampliar</span>
+        <div id="imagen1" class="caja-zoom">
+          <a href="#imagen1" title="Ampliar a pantalla completa">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+              alt="Paisaje de montaña">
           </a>
+          <a href="#cerrar" class="btn-restaurar">Cerrar pantalla completa</a>
         </div>
       </article>
 

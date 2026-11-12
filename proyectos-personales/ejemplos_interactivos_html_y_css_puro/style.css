@@ -280,112 +280,76 @@ body:has(#modo:checked) .status-text::after {
 /* ==========================================================================
    7. EJEMPLO 2: ZOOM DE IMAGEN CON :target
    ========================================================================== */
-.thumb-link {
-  display: inline-block;
-  position: relative;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  border: 2px solid var(--border-color);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-  cursor: zoom-in;
-}
-
-.thumb-link:hover {
-  transform: translateY(-3px) scale(1.02);
-  border-color: var(--accent);
-}
-
-.thumb-img {
-  display: block;
+   /* Miniatura en su estado normal */
+.caja-zoom {
   width: 220px;
-  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+}
+
+.caja-zoom img {
+  display: block;
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.thumb-hint {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  background: rgba(15, 23, 42, 0.78);
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  backdrop-filter: blur(4px);
-}
-
-/* Visor modal oculto por defecto */
-.lightbox {
+/* Al hacer clic (#imagen1:target), el propio div pasa a ocupar toda la pantalla */
+#imagen1:target {
   position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background-color: rgba(10, 15, 28, 0.82);
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s ease;
-}
-
-/* Enlace invisible de fondo para cerrar al hacer clic fuera de la imagen */
-.lightbox-backdrop-close {
-  position: absolute;
-  inset: 0;
-  cursor: zoom-out;
-}
-
-/* Contenedor interno que escala suavemente */
-.lightbox-content {
-  position: relative;
-  z-index: 10;
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  padding: 1rem;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.55);
-  max-width: min(92vw, 680px);
+  inset: 0; /* Equivalente a top: 0; right: 0; bottom: 0; left: 0; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.9rem;
-  transform: scale(0.5);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.lightbox-img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-md);
-  display: block;
-}
-
-.lightbox-footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  z-index: 9999;
+  animation: aparecerZoom 0.3s ease forwards;
 }
 
-.lightbox-caption {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+/* La imagen dentro del contenedor a pantalla completa */
+#imagen1:target img {
+  max-width: 85vw;
+  max-height: 75vh;
+  width: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
-/* Estado activo cuando la URL apunta a #imagen1 */
-#imagen1:target {
-  opacity: 1;
-  pointer-events: auto;
+/* Animación de entrada */
+@keyframes aparecerZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-#imagen1:target .lightbox-content {
-  transform: scale(1);
+/* Botón cerrar */
+.btn-restaurar {
+  display: none;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+#imagen1:target .btn-restaurar {
+  display: inline-block;
 }
 
 /* ==========================================================================
