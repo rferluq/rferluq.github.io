@@ -1,0 +1,186 @@
+/* ===== General ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #ecf0f3;
+    color: #2c3e50;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+h2 {
+    color: #203a43;
+    border-left: 6px solid #f39c12;
+    padding-left: 12px;
+    margin-top: 35px;
+}
+
+/* ===== Cabecera ===== */
+#cabecera {
+    background: linear-gradient(to right, #0f2027, #2c5364);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#cabecera h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#buscador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#buscador input {
+    padding: 9px 12px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: 230px;
+    font-size: 15px;
+}
+
+#buscador input:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+#buscador button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f39c12;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buscador button:hover {
+    background-color: #d68910;
+}
+
+/* ===== Tarjetas ===== */
+#nombre-localidad {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 12px;
+    border-bottom: 6px solid #2c5364;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta h3 {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    color: #7f8c8d;
+}
+
+.tarjeta .valor {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Color distinto para cada tarjeta */
+#tarjeta-tmax   { border-bottom-color: #e74c3c; }
+#tarjeta-tmin   { border-bottom-color: #3498db; }
+#tarjeta-lluvia { border-bottom-color: #1abc9c; }
+#tarjeta-viento { border-bottom-color: #f39c12; }
+
+#tarjeta-tmax .valor   { color: #e74c3c; }
+#tarjeta-tmin .valor   { color: #3498db; }
+#tarjeta-lluvia .valor { color: #1abc9c; }
+#tarjeta-viento .valor { color: #f39c12; }
+
+/* ===== Gráficos (los 4 del mismo tamaño) ===== */
+#contenedor-graficos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grafico {
+    background-color: white;
+    min-width: 0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.grafico h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #203a43;
+}
+
+.grafico canvas {
+    width: 100%;
+}
+
+/* ===== Pie de página ===== */
+#pie {
+    background-color: #0f2027;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+#pie p {
+    margin: 5px 0;
+}
+
+/* ===== Pantallas pequeñas ===== */
+@media (max-width: 800px) {
+    #tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contenedor-graficos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    #cabecera {
+        flex-direction: column;
+    }
+
+    #cabecera h1 {
+        font-size: 22px;
+    }
+
+    #tarjetas {
+        grid-template-columns: 1fr;
+    }
+}

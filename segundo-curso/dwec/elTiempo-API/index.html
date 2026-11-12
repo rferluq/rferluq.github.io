@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsión del tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========== CABECERA ========== -->
+    <header id="cabecera">
+        <h1>Previsión del tiempo</h1>
+
+        <div id="buscador">
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" list="lista-localidades" placeholder="Escribe una localidad">
+            <button type="button" id="btn-buscar">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== RESUMEN METEOROLÓGICO ========== -->
+        <section id="resumen">
+            <h2>Resumen meteorológico</h2>
+            <p id="nombre-localidad">Localidad: -</p>
+
+            <div id="tarjetas">
+                <article class="tarjeta" id="tarjeta-tmax">
+                    <h3>Temperatura máxima</h3>
+                    <p class="valor"><span id="valor-tmax">--</span> °C</p>
+                </article>
+
+                <article class="tarjeta" id="tarjeta-tmin">
+                    <h3>Temperatura mínima</h3>
+                    <p class="valor"><span id="valor-tmin">--</span> °C</p>
+                </article>
+
+                <article class="tarjeta" id="tarjeta-lluvia">
+                    <h3>Precipitación acumulada</h3>
+                    <p class="valor"><span id="valor-lluvia">--</span> mm</p>
+                </article>
+
+                <article class="tarjeta" id="tarjeta-viento">
+                    <h3>Viento máximo</h3>
+                    <p class="valor"><span id="valor-viento">--</span> km/h</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== ZONA DE GRÁFICOS ========== -->
+        <section id="graficos">
+            <h2>Gráficos de la previsión</h2>
+
+            <div id="contenedor-graficos">
+                <div class="grafico">
+                    <h3>Temperaturas</h3>
+                    <canvas id="grafico1"></canvas>
+                </div>
+
+                <div class="grafico">
+                    <h3>Precipitación</h3>
+                    <canvas id="grafico2"></canvas>
+                </div>
+
+                <div class="grafico">
+                    <h3>Viento máximo</h3>
+                    <canvas id="grafico3"></canvas>
+                </div>
+
+                <div class="grafico">
+                    <h3>Días con lluvia</h3>
+                    <canvas id="grafico4"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <footer id="pie">
+        <p>Datos obtenidos de: <span id="nombre-api">Nombre de la API</span></p>
+        <p>Fecha y hora de la consulta: <span id="fecha-consulta">--/--/---- --:--</span></p>
+    </footer>
+
+</body>
+
+</html>

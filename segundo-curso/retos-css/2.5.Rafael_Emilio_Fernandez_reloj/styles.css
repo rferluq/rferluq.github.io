@@ -1,0 +1,65 @@
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+
+  .reloj {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px auto 20px auto;
+    border: 8px solid black;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+
+
+  .num {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .n12 { top: 15px;  left: 130px; }
+  .n1  { top: 31px;  left: 190px; }
+  .n2  { top: 75px;  left: 234px; }
+  .n3  { top: 135px; left: 250px; }
+  .n4  { top: 195px; left: 234px; }
+  .n5  { top: 239px; left: 190px; }
+  .n6  { top: 255px; left: 130px; }
+  .n7  { top: 239px; left: 70px;  }
+  .n8  { top: 195px; left: 26px;  }
+  .n9  { top: 135px; left: 10px;  }
+  .n10 { top: 75px;  left: 26px;  }
+  .n11 { top: 31px;  left: 70px;  }
+
+  .aguja {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom center;
+    background: black;
+  }
+  .horas    { width: 8px; height: 70px;  margin-left: -4px; }
+  .minutos  { width: 5px; height: 100px; margin-left: -2.5px; }
+  .segundos { width: 2px; height: 115px; margin-left: -1px; background: red; }
+
+  .centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -7px;
+    border-radius: 50%;
+    background: black;
+  }
+
+  #digital { font-size: 20px; }
